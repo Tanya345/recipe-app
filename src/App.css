@@ -1,38 +1,152 @@
-.App {
-  text-align: center;
+
+.navbar{
+  position: fixed;
+  top:0;
+  width: 100%;
+  z-index:1;
+  background-color: #9e9e9ebf;
+  margin-top: 1.3rem;
+  padding: 0px 17px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navbar-light .navbar-brand:hover {
+  color: #e91e63;
+}
+.navbar-brand{
+  font-family:cursive
+}
+.navbar-light .navbar-nav .nav-link:hover {
+  color: #e91e63;
+}
+.navbar-light .navbar-brand{
+  color: white;
+}
+.navbar-light .navbar-nav .nav-link{
+  color:white
+ }
+.nav-item a{
+  font-weight: bold;
+  text-decoration: none;
+}
+.navbar-light .navbar-nav .nav-link.active{
+  color: #e91e63;
+  font-weight: 800;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.nav-item{
+    padding: 6px 16px;
+    margin: 0px 12px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+h1,h2,h3,h4,h5,h6{
+  color: white;
+}
+.Home{
+  padding: 15px;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  opacity:0.86;
+  display: flex;
+  justify-content: space-around;
+  /* flex-direction: column; */
+  height: 100vh;
+  background: url('https://b.zmtcdn.com/mx-onboarding-hero87f77501659a5656cad54d98e72bf0d81627911821.webp');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  position: relative;
+  top: 0px;
+}
+.slick-dots li button:before {
+  color: white !important;
+}
+.slick-dots li.slick-active button:before {
+  color:orange !important;
+}
+.recipeInput{
+  width: fit-content;
+  padding: 0.5rem 2rem;
+  border: 2px solid white;
+  background: inherit;
+  border-radius: 33px;
+  color: #ffffffed;
+}
+.btnSearch{
+  border: 2px solid white;
+  border-radius: 33px;
+  padding: 0.5rem 2rem;
+  margin-left: 1rem;
+  color: white;
+  outline: none;
+  align-self: flex-start;
+}
+.btnSearch:hover{
+  background-color: #194087;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+/* Recipes Page */
+.Recipes{
+  background-color: #000000e0;
+  /* height: 100vh; */
+  opacity: 0.86;
+}
+.container{
+  padding-top: 125px;
+  align-items: center;
+}
+.card{
+  width:76%;
+  margin: 10px 12px;
+  flex-direction: row;
+  padding: 0px 10px;
+  background: inherit;
+  color: white;
+  border:2px solid white;
+  box-shadow: 35px 71px 65px black;
+}
+.card-link{
+  background: #f43030;
+  text-decoration: none;
+  border: 2px solid #f43030;
+  border-radius: 9px;
+  padding: 5px 10px;
+  color: white;
+}
+.card-link:hover{
+    background: #dc2727;
+    color: white;
+}
+.imgDiv{
+  border-radius: 144px;
+    width: 13.5rem;
+  /* width:20%; */
+    border: 2px solid lightgrey;
+    margin: 10px;
+    height: 12rem;
+    overflow: hidden;
+    display: flex;
+
+}
+.card-body{
+  /* width:70% */
+}
+.RecipeInfo{
+  background-color: #000000e0;
+  /* height: 100vh; */
+}
+@media screen and (max-width:780px) {
+  .imgDiv{
+  align-self: center;
+  border-radius: 28px;
+  width: 75%;
+  /* height: 11rem; */
+}
+.card{
+  flex-direction: column;
+  width: 75vw;
+}
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+@media screen and (max-width:630px) {
+  .imgDiv{
+    width: 100%;
   }
 }
